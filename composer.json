@@ -1,0 +1,27 @@
+{
+    "name": "blazing-threads/pdf-curator",
+    "description": "A PDF merger that resolves and maintains internal page links, including cross-file internal links.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Carter",
+            "email": "alex@blazeworx.com",
+            "homepage": "http://blazeworx.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Keith E. Freeman",
+            "email": "pdf-curator@forsaken-threads.com",
+            "homepage": "http://forsaken-threads.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "setasign/fpdi-fpdf": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "BlazingThreads\\PdfCurator\\": "./src"
+        }
+    }
+}
