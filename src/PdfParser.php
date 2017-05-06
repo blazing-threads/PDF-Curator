@@ -32,7 +32,7 @@ class PdfParser extends \fpdi_pdf_parser
         $destination = str_replace('-', '#2d', $destination);
 
         foreach ($this->getDestinations()[1][1] as $dest => $objSpec) {
-            if (preg_match("|^/file#3a#2f#2f#2f.+#23$destination|", $dest)) {
+            if (preg_match("|^/file#3a#2f#2f#2f.+#23$destination$|", $dest)) {
                 return $this->resolveObject($objSpec)[1][1][0][1] + 1 + $this->getPageOffset();
             }
         }
