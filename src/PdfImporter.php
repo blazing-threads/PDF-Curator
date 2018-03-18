@@ -56,9 +56,10 @@ class PdfImporter extends \FPDI
     /**
      * @param int $pageNumber
      * @param string $boxName
+     * @param null $groupXObject
      * @return int
      */
-    public function importPage($pageNumber, $boxName = '/CropBox')
+    public function importPage($pageNumber, $boxName = '/CropBox', $groupXObject = null)
     {
         $templateIndex = parent::importPage($pageNumber, $boxName);
         $template =& $this->_tpls[$templateIndex];
